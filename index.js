@@ -1,7 +1,9 @@
 require("dotenv").config();
-console.log(process.env);
+const questions = require("./utils/questions");
+const inquirer = require("inquirer");
+const fs = require("fs");
 
-const questions = [];
+inquirer.prompt(questions);
 
 function writeToFile(fileName, data) {}
 
