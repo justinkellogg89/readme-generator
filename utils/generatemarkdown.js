@@ -1,7 +1,39 @@
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
-  # ${data.title}
-  
+# ${answers.name}
+
+## Description:
+
+${answers.description}
+
+## Technologies Used:
+
+${answers.technologies}
+
+## Dependencies:
+
+${answers.install}
+
+## Usage:
+
+${answers.usage}
+
+## Status of Project:
+
+${answers.status}
+
+## License:
+
+${answers.license}
+
+## Contribution Parameters:
+
+${answers.contribution}
+
+## Tests:
+
+${answers.tests}
+
   `;
 }
 
